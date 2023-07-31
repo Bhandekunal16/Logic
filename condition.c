@@ -12,8 +12,8 @@ int main(){
 
 int number(){
     int a, b, c;
-    printf("give me any number") + scanf("%d", &a);
-    printf("give me another number") + scanf("%d", &b);
+    printf("give me any number :") + scanf("%d", &a);
+    printf("give me another number :") + scanf("%d", &b);
     c= a + b;
     return c;
 }
