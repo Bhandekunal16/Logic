@@ -60,6 +60,6 @@ int main(){
     
     else{
         printf("thank for your time");
-    };
+    }
     return 0;
 }

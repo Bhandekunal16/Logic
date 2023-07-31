@@ -1,4 +1,4 @@
-display = input("Enter 1 to perform addition & enter 2 to perform table & enter 3 to perform subtraction & enter 4 to perform multiplication: ")
+display = input("Enter 1 to perform addition & enter 2 to perform table & enter 3 to perform subtraction & enter 4 to perform multiplication & enter 5 to perform division: ")
 
 if display == "1":
     num1 = int(input("Enter your first number: "))
@@ -17,6 +17,12 @@ elif display == "4":
     num2 = int(input("Enter your second number: "))
     result = num1*num2
     print("This is your multiplication:", result)
+    
+elif display == "5":
+    num1 = int(input("Enter your first number: "))
+    num2 = int(input("Enter your second number: "))
+    result = num1/num2
+    print("This is your division:", result)
     
 elif display == "2":
     num1 = int(input("Enter your second number: "))
