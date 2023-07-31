@@ -1,11 +1,11 @@
 #include<stdio.h>
 int main(){
     int result = number();
-    if(result > 1 && result < 10){
+    if(result > 1 && result < 20){
          printf("this is result %d\n", result );
     }
     else{
-         printf("condition not meat %d\n", result );
+         printf(" condition not meat %d\n", result );
     }
    return 0;
 }
@@ -27,7 +27,7 @@ int number(){
 
 int array(){
     int num= number();
-    int Array[10]={1,2,3,4,5,6,7,8,9,10};
+    int Array[20]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,20};
     if(num >1 && num < 10){
         return Array[num];
     }
