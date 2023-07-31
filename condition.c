@@ -12,7 +12,7 @@ int main(){
 
 int number(){
     int a, b, c, conform;
-    printf("if you want to guess a random number") + scanf("%d", &conform);
+    printf("if you want to guess a random number :") + scanf("%d", &conform);
     if(conform==1){
         printf("give me any number :") + scanf("%d", &a);
         printf("give me another number :") + scanf("%d", &b);
