@@ -1,4 +1,4 @@
-display = input("Enter 1 to perform addition & enter 2 to perform table & enter 3 to perform subtraction & enter 4 to perform multiplication & enter 5 to perform division & enter 6 if you want to find squre: ")
+display = input("Enter 1 to perform addition & enter 2 to perform table & enter 3 to perform subtraction & enter 4 to perform multiplication & enter 5 to perform division & enter 6 if you want to find squre & enter 7 if you want to find cube: ")
 
 if display == "1":
     num1 = int(input("Enter your first number: "))
@@ -28,6 +28,11 @@ elif display == "6":
     num1 = int(input("Enter your first number: "))
     result = num1*num1
     print("This is your square:", result)
+    
+elif display == "7":
+    num1 = int(input("Enter your first number: "))
+    result = num1*num1*num1
+    print("This is your cube:", result)
     
 elif display == "2":
     num1 = int(input("Enter your second number: "))
