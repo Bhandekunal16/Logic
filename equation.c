@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+    printf("3x + 2y = 10 this is equation ");
+    float x ,y;
+    printf("give me number for x :") + scanf("%f", &x);
+    // 3x + 2y = 10;
+    y = (10 - 3 * x) / 2;
+    x = (10 - 2 * y) / 3;
+    printf("value of y : %f\n", y);
+   printf("value of x : %f\n",x );
+   int main2= sec();
+    return 0;
+}
+
+int sec(){
+    printf("2x - 4y = 4 = 10 this is equation ");
+    float x ,y;
+    printf("give me number for x :") + scanf("%f", &x);
+    // 2x - 4y = 4
+    y = (4 - 2 * x) / 4;
+    x = (4 - 4 * y) / 2;
+   printf("value of y : %f\n", y);
+   printf("value of x : %f\n",x );
+    return 0;
+}
