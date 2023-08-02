@@ -6,13 +6,13 @@ const homeContent = () => {
   </div>
   <div style="background-color: whitesmoke; border-radius: 8px;">
       <li>
-          <a href="https://github.com/Bhandekunal16/Logic/tree/main/c">c </a>
+          <a href="https://github.com/Bhandekunal16/Logic/tree/main/c">c codes for basic use.</a>
       </li>
       <li>
-         <a href="https://github.com/Bhandekunal16/Logic/tree/main/javascript"> javascript</a>
+         <a href="https://github.com/Bhandekunal16/Logic/tree/main/javascript"> javascript code for basic use.</a>
       </li>
       <li>
-          <a href="https://github.com/Bhandekunal16/Logic/tree/main/python">python</a>
+          <a href="https://github.com/Bhandekunal16/Logic/tree/main/python">python code for basic use.</a>
       </li>
   </div>
 </div>`;
