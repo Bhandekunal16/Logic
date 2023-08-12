@@ -15,6 +15,8 @@ const homeContent = () => {
           <a href="https://github.com/Bhandekunal16/Logic/tree/main/python">python code for basic use.</a>
       </li>
   </div>
+
+ 
 </div>`;
 };
 

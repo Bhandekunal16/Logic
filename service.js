@@ -2,6 +2,14 @@ const servicesContent = () => {
     return `<div class="service-item">
       <h2>Web Development</h2>
       <p>We offer professional web development services to build responsive and user-friendly websites.</p>
+      <p><a href="https://bhandekunal16.github.io/online-html-creator/">online html creator</a></p>
+      <p><a href="https://bhandekunal16.github.io/html-routable-template/">javascript base routing templates</a></p>
+      <p><a href="https://bhandekunal16.github.io/Web--application/">web page template</a></p>
+      <p><a href="https://bhandekunal16.github.io/binary-converter/">binary-converter</a></p>
+      <p><a href=" https://bhandekunal16.github.io/time/">time</a></p>
+      <p><a href=" https://robotec-dashboard-1.vercel.app/">Live working web portal</a></p>
+
+      
     </div>
   
     <div class="service-item">
@@ -19,3 +27,5 @@ const servicesContent = () => {
   function service() {
       appContent.innerHTML = servicesContent();
     }
+
+    
