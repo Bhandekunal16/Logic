@@ -10,6 +10,7 @@ const servicesContent = () => {
       <p><a href="https://bhandekunal16.github.io/html-routable-template/">javascript base routing templates</a></p>
       <p><a href="https://bhandekunal16.github.io/Web--application/">web page template</a></p>
       <p><a href="https://bhandekunal16.github.io/binary-converter/">binary-converter</a></p>
+      <p><a href="https://bhandekunal16.github.io/Robotec-project/">mathamatical calculater</a></p>
       </div>
      
       <div>
