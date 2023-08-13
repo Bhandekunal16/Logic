@@ -8,9 +8,11 @@ const servicesContent = () => {
       <p><a href="https://bhandekunal16.github.io/binary-converter/">binary-converter</a></p>
       <p><a href=" https://bhandekunal16.github.io/time/">time</a></p>
       <p><a href=" https://robotec-dashboard-1.vercel.app/">Live working web portal</a></p>
-
+      <p><a href="  https://bhandekunal16.github.io/cube-finder/"> cube founder</a></p>  
+      <p><a href=" https://bhandekunal16.github.io/squre-root-finder/"> squre founder</a></p>
       
     </div>
+   
   
     <div class="service-item">
       <h2>Mobile App Development</h2>
