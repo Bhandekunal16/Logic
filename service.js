@@ -11,7 +11,7 @@ const servicesContent = () => {
       <p><a href="  https://bhandekunal16.github.io/cube-finder/"> cube founder</a></p>  
       <p><a href=" https://bhandekunal16.github.io/squre-root-finder/"> squre founder</a></p>
       <p><a href="  https://github.com/Bhandekunal16/glowing-honey-comb-template/actions
-      "> squre founder</a></p>
+      "> glowing cube design</a></p>
            
     </div>
    
