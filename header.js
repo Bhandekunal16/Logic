@@ -1,5 +1,5 @@
 const content = () => {
-    return ` 
+  return ` 
     <div class="navbar">
     <a href="#" onClick="home()">Home</a>
     <a href="#" onClick="about()">About</a>
@@ -7,4 +7,4 @@ const content = () => {
     <a href="#" onClick="contact()">Contact</a>
   </div>
       `;
-  };
+};
