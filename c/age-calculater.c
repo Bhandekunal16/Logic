@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <time.h>
 
-int main() {
+int main()
+{
     int birthYear;
     time_t currentTime;
     struct tm *timeInfo;

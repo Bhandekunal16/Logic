@@ -1,6 +1,7 @@
-#include<stdio.h>
-int main(){
-    float number,totalNumber,percentage;
+#include <stdio.h>
+int main()
+{
+    float number, totalNumber, percentage;
     printf("give the number :") + scanf("%f", &number);
     printf("give the total number :") + scanf("%f", &totalNumber);
     percentage = number / totalNumber * 100;

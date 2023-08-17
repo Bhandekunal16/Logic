@@ -1,7 +1,8 @@
-#include<stdio.h>
+#include <stdio.h>
 #include <time.h>
-int main(){
-     time_t currentTime;
+int main()
+{
+      time_t currentTime;
       currentTime = time(NULL);
       char buffer[80];
       struct tm *timeInfo;
