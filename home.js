@@ -1,5 +1,5 @@
 const homeContent = () => {
-  return ` <div style="background-color: rgb(216, 216, 216); padding: 10%; border-radius: 8px;">
+  return ` <div style="background-color: rgb(216, 216, 216); padding: 3%; border-radius: 8px;">
   <div style="text-align: center;">
       <h1>contribute create a good code environment.</h1>
   </div>
@@ -13,6 +13,13 @@ const homeContent = () => {
       <li>
           <a href="https://github.com/Bhandekunal16/Logic/tree/main/python">python code for basic use.</a>
       </li>
+  </div>
+
+  <div>
+  <p>if you want to add your stuff then follow below steps</p>
+  <p>open the terminal</p>
+  <h3 style="color: red"> git-hub account is important for this.  </h3>
+  <p> add this command : git clone https://github.com/Bhandekunal16/Logic.git</p>
   </div>
 
  
