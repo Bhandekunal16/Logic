@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe Game</title>
+    <style>
+      .input-cell {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center;">
+        <div>
+            <p>Click the cells to play. X goes first.</p>
+          </div>
+          <div>
+            <input
+              type="text"
+              class="input-cell"
+              id="1"
+              onclick="handleCellClick(this)"
+              readonly
+            />
+            <input
+              type="text"
+              class="input-cell"
+              id="2"
+              onclick="handleCellClick(this)"
+              readonly
+            />
+            <input
+              type="text"
+              class="input-cell"
+              id="3"
+              onclick="handleCellClick(this)"
+              readonly
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              class="input-cell"
+              id="4"
+              onclick="handleCellClick(this)"
+              readonly
+            />
+            <input
+              type="text"
+              class="input-cell"
+              id="5"
+              onclick="handleCellClick(this)"
+              readonly
+            />
+            <input
+              type="text"
+              class="input-cell"
+              id="6"
+              onclick="handleCellClick(this)"
+              readonly
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              class="input-cell"
+              id="7"
+              onclick="handleCellClick(this)"
+              readonly
+            />
+            <input
+              type="text"
+              class="input-cell"
+              id="8"
+              onclick="handleCellClick(this)"
+              readonly
+            />
+            <input
+              type="text"
+              class="input-cell"
+              id="9"
+              onclick="handleCellClick(this)"
+              readonly
+            />
+          </div>
+          <div id="result"></div>
+      
+    </div>
+    
+    <script>
+      let currentPlayer = "X";
+      let gameBoard = [
+        ["", "", ""],
+        ["", "", ""],
+        ["", "", ""],
+      ];
+
+      const resultDisplay = document.getElementById("result");
+
+      function handleCellClick(cell) {
+        if (!cell.value) {
+          cell.value = currentPlayer;
+          cell.style.color = currentPlayer === "X" ? "green" : "blue";
+
+          const cellId = parseInt(cell.id) - 1;
+          const row = Math.floor(cellId / 3);
+          const col = cellId % 3;
+          gameBoard[row][col] = currentPlayer;
+
+          if (checkWin()) {
+            resultDisplay.textContent = `Player ${currentPlayer} wins!`;
+            return;
+          }
+
+          currentPlayer = currentPlayer === "X" ? "O" : "X";
+        }
+      }
+
+      function checkWin() {
+        for (let i = 0; i < 3; i++) {
+          if (
+            gameBoard[i][0] &&
+            gameBoard[i][0] === gameBoard[i][1] &&
+            gameBoard[i][1] === gameBoard[i][2]
+          ) {
+            return true;
+          }
+
+          if (
+            gameBoard[0][i] &&
+            gameBoard[0][i] === gameBoard[1][i] &&
+            gameBoard[1][i] === gameBoard[2][i]
+          ) {
+            return true;
+          }
+        }
+
+        if (
+          gameBoard[0][0] &&
+          gameBoard[0][0] === gameBoard[1][1] &&
+          gameBoard[1][1] === gameBoard[2][2]
+        ) {
+          return true;
+        }
+
+        if (
+          gameBoard[0][2] &&
+          gameBoard[0][2] === gameBoard[1][1] &&
+          gameBoard[1][1] === gameBoard[2][0]
+        ) {
+          return true;
+        }
+
+        return false;
+      }
+    </script>
+  </body>
+</html>
