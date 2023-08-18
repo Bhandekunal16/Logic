@@ -31,10 +31,11 @@ body {
 .footerContent {
   background-color: #333;
   color: white;
-  padding: 10px;
   text-align: center;
   height: auto;
-  width: auto;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
