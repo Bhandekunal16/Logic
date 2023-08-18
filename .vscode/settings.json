@@ -58,7 +58,7 @@
   "C_Cpp.errorSquiggles": "disabled",
   "liveServer.settings.port": 5501,
   "[python]": {
-    "editor.defaultFormatter": "ms-python.autopep8"
+    "editor.defaultFormatter": "ms-python.python"
   },
   "python.formatting.provider": "none"
 }
