@@ -7,6 +7,7 @@
   </head>
   <body>
     <header id="header"></header>
+    <div id="result"></div>
     <div id="primary"></div>
     <div id="footer"></div>
     <script src="header.js"></script>
@@ -23,44 +24,93 @@
   <h1>Welcome to My Website</h1>
   <p>This is the content of the website.</p>
   <p> click on home for dashboard</p>
+  <button onclick="game()">click to play game.</button>
 </div>`;
       };
 
       const appContent = document.getElementById("primary");
       appContent.innerHTML = app();
 
+      function game() {
+        fetch("game.html")
+          .then((response) => response.text())
+          .then((layout) => {
+            document.getElementById("primary").innerHTML = layout;
+          });
+      }
+
       const header = document.getElementById("header");
       header.innerHTML = content();
 
       const footer = document.getElementById("footer");
       footer.innerHTML = footerContent();
+
+      let currentPlayer = "X";
+      let gameBoard = [
+        ["", "", ""],
+        ["", "", ""],
+        ["", "", ""],
+      ];
+
+      const resultDisplay = document.getElementById("result");
+
+      function handleCellClick(cell) {
+        if (!cell.value) {
+          cell.value = currentPlayer;
+          cell.style.color = currentPlayer === "X" ? "green" : "blue";
+
+          const cellId = parseInt(cell.id) - 1;
+          const row = Math.floor(cellId / 3);
+          const col = cellId % 3;
+          gameBoard[row][col] = currentPlayer;
+
+          if (checkWin()) {
+            resultDisplay.textContent = `Player ${currentPlayer} wins!`;
+            return;
+          }
+
+          currentPlayer = currentPlayer === "X" ? "O" : "X";
+        }
+      }
+
+      function checkWin() {
+        for (let i = 0; i < 3; i++) {
+          if (
+            gameBoard[i][0] &&
+            gameBoard[i][0] === gameBoard[i][1] &&
+            gameBoard[i][1] === gameBoard[i][2]
+          ) {
+            return true;
+          }
+
+          if (
+            gameBoard[0][i] &&
+            gameBoard[0][i] === gameBoard[1][i] &&
+            gameBoard[1][i] === gameBoard[2][i]
+          ) {
+            return true;
+          }
+        }
+
+        if (
+          gameBoard[0][0] &&
+          gameBoard[0][0] === gameBoard[1][1] &&
+          gameBoard[1][1] === gameBoard[2][2]
+        ) {
+          return true;
+        }
+
+        if (
+          gameBoard[0][2] &&
+          gameBoard[0][2] === gameBoard[1][1] &&
+          gameBoard[1][1] === gameBoard[2][0]
+        ) {
+          return true;
+        }
+
+        return false;
+      }
     </script>
-    <!-- Default Statcounter code for code pedia
-https://bhandekunal16.github.io/Logic/# -->
-    <script type="text/javascript">
-      var sc_project = 12910431;
-      var sc_invisible = 0;
-      var sc_security = "a6a36af2";
-      var scJsHost = "https://";
-      document.write(
-        "<sc" +
-          "ript type='text/javascript' src='" +
-          scJsHost +
-          "statcounter.com/counter/counter.js'></" +
-          "script>"
-      );
-    </script>
-    <noscript
-      ><div class="statcounter">
-        <a title="Web Analytics" href="https://statcounter.com/" target="_blank"
-          ><img
-            class="statcounter"
-            src="https://c.statcounter.com/12910431/0/a6a36af2/0/"
-            alt="Web Analytics"
-            referrerpolicy="no-referrer-when-downgrade"
-        /></a></div
-    ></noscript>
-    <!-- End of Statcounter Code -->
-    <a href="https://statcounter.com/p12910431/?guest=1">View My Stats</a>
   </body>
 </html>
+
